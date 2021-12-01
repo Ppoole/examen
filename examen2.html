@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Tahoma, sans-serif;
+        }
+        #boton{
+            color:white;
+            background-color: #974d10;
+        }
+        header{
+
+            box-shadow: 0px 1px;
+            padding-bottom: 3vh;
+            padding-left: 3vw;
+        }
+
+        div{
+            margin-left: 2vw;
+            width: 95%;
+        }
+
+        form{
+            
+            margin:2vw;
+        }
+
+        div.formulario{
+            border-style: solid;
+            padding: 1.7vw;
+            border-color: #974d10;
+            border-width: 1px;
+            width:max-content;
+        }
+
+        #termi{
+            margin-left: 4vw;
+        }
+        footer{
+            position: fixed;
+            width: 100%;
+            background-color: #974d10;
+            top: 90%;
+            margin-left: -10px;
+            
+        }
+        .letrapequeña{
+            
+            font-size: x-small;
+        }
+        footer p{
+            padding-top: 2px;
+            padding-bottom: 30px;
+            color:white;
+            margin-left: 6vw;
+        }
+
+        form p.voladora{
+            z-index: 2;
+            top: 30px;
+            left: 55px;
+            position: relative;
+            background-color: #974d10;
+            padding: 4px;
+            color:white;
+            width:max-content;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h3>petinder</h3>
+    </header>
+    <div>
+    <h2>Hazte socio</h2>
+    <p>Colabora con Petinder haciéndote socio por 15 euros mensuales. Con muy poco puedes ayudar mucho a nuestros amigos peludos. Además puedes comprar nuestra exclusiva camiseta por sólo 10 euros que se añadirán al primer pago. Rellena el siguiente formulario para unirte a nosotros.</p>
+    </div>
+    
+    <form>
+        <p class="voladora">Dirección</p>
+        <div class="formulario">
+        
+        <label for="calle">Calle y número.*</label><br>
+        <input type="text" id="calle" name="calle" placeholder="Calle y número" size="74wh" required/><br />
+        <label for="ciudad">Ciudad.*</label><br>
+        <input type="text" id="ciudad" name="ciudad" placeholder="Ciudad"  size="74wh" required/><br />
+        <label for="provincia">Provincia.*</label><br>
+        <input type="text" id="provincia" name="provincia" placeholder="Provincia"  size="74wh" required/><br />
+        <label for="codpos">Código postal.*</label><br>
+        <input type="text" id="codpos" name="codpos" placeholder="Código postal" pattern="[0-9]{5}" title="El Código Postal ha de tener 5 dígitos"  size="74vh" required/><br />
+        <label for="pais">País.</label><br>
+        <select id="pais" name="pais"  ><br>
+            <option value="seleccionar"  selected>Seleccionar </option>
+            <option value="españa">España</option>
+            <option value="portugal">Portugal</option>
+        </select><br>
+    </div>
+    <div id="termi">
+        <p class="letrapequeña">* Todos los campos marcados son obligatorios.</p> 
+        <input type="checkbox" id="terminos" name="terminos" required>
+        <label for="terminos">He leido y acepto los términos y condiciones de uso.</label><br>
+        <input id="boton" type="submit" value="Enviar" />
+
+    </div>
+    <br><br><br><br><br><br><br><br>
+    </form>
+    <footer>
+        <p>2021 &copy; Pedro Poole Prieto</p>
+    </footer>
+</body>
+</html>
